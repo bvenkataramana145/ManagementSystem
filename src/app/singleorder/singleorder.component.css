@@ -1,0 +1,15 @@
+.singl-form{margin-top: 3em;}
+.input-group.singord {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+    padding: 6px;
+}
+
+section.sigleorder2 {
+    margin-top: 18px;
+}
+section.sigleorder1{
+    margin-top: 18px;
+}

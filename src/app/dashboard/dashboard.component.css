@@ -1,0 +1,16 @@
+.box {
+    position: relative;
+    top: 33vh;
+}
+.box-part.text-center {
+    border: 1px solid #ccc;
+    padding: 9px;
+    box-shadow: 0 14px 20px -12px rgba(0,0,0,0.2);
+    
+}
+.title a {
+    text-decoration: none;
+}
+button.btn.btn-sm.btn-primary {
+    margin-top: 12px;
+}
