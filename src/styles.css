@@ -6,6 +6,9 @@
 .text-center.list-card {
     padding: 9px;
     border: 1px solid #ccc;
+    background-color: cadetblue;
+    color: #fff;
+    font-size: 17px;
 }
 .control-label.text-right {
     margin-top: 6px;
@@ -82,4 +85,8 @@ td.text-icon {
 }
 .content {
     margin-bottom: 3em;
+    border-top: 2px solid orange;
+    border-top-width: 2px;
 }
+
+
