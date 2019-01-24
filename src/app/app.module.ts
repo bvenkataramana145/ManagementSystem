@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DataTablesModule } from 'angular-datatables';
 import { NgDatepickerModule } from 'ng2-datepicker';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,7 +27,8 @@ import { ReportsComponent } from './reports/reports.component';
     FormsModule,
     AppRoutingModule,
     DataTablesModule,
-    NgDatepickerModule
+    NgDatepickerModule,
+    AngularFontAwesomeModule
   
   ],
   providers: [],

@@ -41,66 +41,196 @@
 </section>
 <!--multi order table strart-->
 <section class="multi-order">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="content ">
-            <div class="text-center list-card">Multiple Order List</div>
-            <div class="card card-accent-warning">
-              <!-- <div class="card-header">Order Details</div> -->
-              <div class="card-body singlorder2">
-                <table class="table table-bordered table-striped table-sm row-border hover" datatable [dtOptions]="dtOptions">
-                  <thead>
-                    <tr>
-                      <th scope="col">S.NO</th>
-                      <th scope="col">Time</th>
-                      <th scope="col">Date</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>12:15:AM</td>
-                      <td>01/01/2019</td>
-                      <td>Created</td>
-                      <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>11:15:AM</td>
-                      <td>15/05/2018</td>
-                      <td>Deleted</td>
-                      <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>04:15:AM</td>
-                      <td>018/08/2018</td>
-                      <td>Update</td>
-                      <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>02:15:AM</td>
-                      <td>01/05/2019</td>
-                      <td>update</td>
-                      <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>03:15:AM</td>
-                      <td>09/02/2019</td>
-                      <td>Delivered</td>
-                      <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="content ">
+          <div class="text-center list-card">Multiple Order List</div>
+          <div class="card card-accent-warning">
+            <!-- <div class="card-header">Order Details</div> -->
+            <div class="card-body singlorder2">
+              <table class="table table-bordered table-striped table-sm row-border hover" datatable [dtOptions]="dtOptions">
+                <thead>
+                  <tr>
+                    <th scope="col">S.NO</th>
+                    <th scope="col">Hearder-1</th>
+                    <th scope="col">Hearder-2</th>
+                    <th scope="col">Hearder-3</th>
+                    <th scope="col">Hearder-4</th>
+                    <th scope="col">Hearder-5</th>
+                    <th scope="col">Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Row Item-1</td>
+                    <td>Row Item-2</td>
+                    <td>Row Item-3</td>
+                    <td>Row Item-4</td>
+                    <td>Row Item-5</td>
+                    <td class="text-icon">
+                      <a href="#" data-toggle="modal" data-target="#exampleModal"><fa name="edit" animation="spin"></fa>  </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Row Item-1</td>
+                    <td>Row Item-2</td>
+                    <td>Row Item-3</td>
+                    <td>Row Item-4</td>
+                    <td>Row Item-5</td>
+                   
+                      <td class="text-icon">
+                        <a href="#" data-toggle="modal" data-target="#exampleModal"><fa name="edit" animation="spin"></fa>  </a>
+                      </td>
+                  
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Row Item-1</td>
+                    <td>Row Item-2</td>
+                    <td>Row Item-3</td>
+                    <td>Row Item-4</td>
+                    <td>Row Item-5</td>
+                    <td class="text-icon">
+                      <a href="#" data-toggle="modal" data-target="#exampleModal"><fa name="edit" animation="spin"></fa>  </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">multiple Order</h5> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!--Tables start -->
+        <section class="sigleorder1">
+         
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="content ">
+                  <div class="text-center list-card"> Order Details </div>
+                  <div class="card card-accent-warning">
+                    <!-- <div class="card-header">Order Details</div> -->
+                    <div class="card-body sigorder">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Order List</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Contact Details</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Item One</td>
+                            <td>Zettamine,Film Nagar, Hyderabad, TS- 500076</td>
+                            <td>040-256 8793 2334</td>
+                          </tr>
+                          <tr>
+                            <td>Item Two</td>
+                            <td>JNTU College, Kukatpally, Hyderabad, TS- 500072</td>
+                            <td>+91-9949 568 235</td>
+                          </tr>
+                          <tr>
+                            <td>Item Three</td>
+                            <td>PVR Hytech City,Hyderabad, TS- 500076</td>
+                            <td>+91-9949 568 569</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </section>
+        <!--Sigleorder1 end -->
+        <section class="sigleorder2">
+         
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="content ">
+                  <div class="text-center list-card"> Order Log </div>
+                  <div class="card card-accent-warning">
+                    <!-- <div class="card-header">Order Details</div> -->
+                    <div class="card-body singlorder2">
+                      <table class="table table-bordered table-striped table-sm row-border hover" datatable [dtOptions]="dtOptions">
+                        <thead>
+                          <tr>
+                            <th scope="col">S.NO</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>12:15:AM</td>
+                            <td>01/01/2019</td>
+                            <td>Created</td>
+                            <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>11:15:AM</td>
+                            <td>15/05/2018</td>
+                            <td>Deleted</td>
+                            <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>04:15:AM</td>
+                            <td>018/08/2018</td>
+                            <td>Update</td>
+                            <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>02:15:AM</td>
+                            <td>01/05/2019</td>
+                            <td>update</td>
+                            <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>03:15:AM</td>
+                            <td>09/02/2019</td>
+                            <td>Delivered</td>
+                            <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancle</button>
+        <button type="button" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

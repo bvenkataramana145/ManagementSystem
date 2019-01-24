@@ -76,3 +76,10 @@
 }
 
 .singlorder2>.table{margin-bottom:0px;}
+td.text-icon {
+    display: block;
+    text-align: center;
+}
+.content {
+    margin-bottom: 3em;
+}
