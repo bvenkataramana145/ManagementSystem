@@ -9,6 +9,7 @@ import { SingleodserviceService } from '../singleodservice.service';
 export class SingleorderComponent implements OnInit {
 
   singleOdata: any;
+  singleOdatashow=false;
 
   constructor(private getSingleodserviceService: SingleodserviceService) { }
 
@@ -16,7 +17,7 @@ export class SingleorderComponent implements OnInit {
 
   getdetails() {
     // this.getSingleodserviceService.getdetailsval().subscribe( res =>alert(JSON.stringify(res)));
-
+    this.singleOdatashow=true;
     this.getSingleodserviceService.getdetailsval().subscribe
       (data => {
       this.singleOdata = data;

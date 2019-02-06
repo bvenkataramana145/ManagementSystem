@@ -21,7 +21,8 @@
   </div>
 </section>
 <!--Tables start -->
-<section class="sigleorder1">
+<div class="main-div" *ngIf="singleOdatashow">
+<section class="sigleorder1" >
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -41,7 +42,7 @@
                 <tbody>
                   <tr >
                     <td>{{singleOdata.orderList.orderDetails.productNumber}}</td>
-                    <td>{{singleOdata.orderList.address?.Area}}</td>
+                    <td>{{singleOdata.orderList.address.Area}}</td>
                     <td>{{singleOdata.orderList.contactDetails.emailId}}</td>
                   </tr>
                 </tbody>
@@ -54,7 +55,7 @@
   </div>
 </section>
 <!--Sigleorder1 end -->
-<section class="sigleorder2">
+<section class="sigleorder2" >
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -74,7 +75,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let item of singleOdata.orderLog">
+                  <tr *ngFor="let item of singleOdata.orderLog ">
                     <td>1</td>
                     <td>{{item.time}}</td>
                     <td>{{item.date}}</td>
@@ -91,3 +92,4 @@
     </div>
   </div>
 </section>
+</div>
