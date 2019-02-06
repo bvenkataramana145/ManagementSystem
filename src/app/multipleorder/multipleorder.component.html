@@ -18,15 +18,16 @@
             </div>
             <div class="form-group singord">
               <label for="m1" class="col-sm-4 control-label text-right">Start Date</label>
-              <div class="col-sm-8">
-                <input type="date" class="form-control" id="m1order" [(ngModel)]="date">
+              <div class="col-sm-8 input-group">
+                <input type="text"  bsDatepicker class="form-control" id="datepick1"  >
+                <span class="input-group-addon danger"><span class="glyphicon glyphicon-calendar"></span></span>
               </div>
             </div>
             <div class="form-group singord">
               <label for="m2" class="col-sm-4 control-label text-right">End Date</label>
-              <div class="col-sm-8">
-                <!-- <ng-datepicker [(ngModel)]="date" /> -->
-                <input type="date" class="form-control" id="m2order" [(ngModel)]="date">
+              <div class="col-sm-8 input-group">
+                <input type="text"  bsDatepicker class="form-control" id="datepick2"  >
+                <span class="input-group-addon danger"><span class="glyphicon glyphicon-calendar"></span></span>
               </div>
             </div>
             <div class="form-group singord">
@@ -71,7 +72,7 @@
                     <td>Row Item-4</td>
                     <td>Row Item-5</td>
                     <td class="text-icon">
-                      <a href="#" data-toggle="modal" data-target="#exampleModal"><fa name="edit" animation="spin"></fa>  </a>
+                     <a href="#" data-toggle="modal" data-target="#exampleModal"><fa name="edit" animation="spin"></fa>  </a>
                     </td>
                   </tr>
                   <tr>

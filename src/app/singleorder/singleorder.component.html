@@ -8,10 +8,10 @@
           <div class="input-group singord">
             <label for="singleorder" class="col-sm-3 control-label text-right">Single Order</label>
             <div class="col-sm-6">
-              <input type="email" class="form-control" id="singleorder" placeholder=" Search Single Order">
+              <input type="text" class="form-control" id="singleorder" placeholder=" Search Single Order" >
             </div>
             <div class="col-sm-3">
-              <button type="submit" class="btn btn-default">Submit</button>
+              <button (click)= "getdetails()" type="submit" class="btn btn-default">Submit</button>
             </div>
           </div>
         </form>
@@ -39,20 +39,10 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Item One</td>
-                    <td>Zettamine,Film Nagar, Hyderabad, TS- 500076</td>
-                    <td>040-256 8793 2334</td>
-                  </tr>
-                  <tr>
-                    <td>Item Two</td>
-                    <td>JNTU College, Kukatpally, Hyderabad, TS- 500072</td>
-                    <td>+91-9949 568 235</td>
-                  </tr>
-                  <tr>
-                    <td>Item Three</td>
-                    <td>PVR Hytech City,Hyderabad, TS- 500076</td>
-                    <td>+91-9949 568 569</td>
+                  <tr >
+                    <td>{{singleOdata.orderList.orderDetails.productNumber}}</td>
+                    <td>{{singleOdata.orderList.address?.Area}}</td>
+                    <td>{{singleOdata.orderList.contactDetails.emailId}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -73,7 +63,7 @@
           <div class="card card-accent-warning">
             <!-- <div class="card-header">Order Details</div> -->
             <div class="card-body singlorder2">
-              <table class="table table-bordered table-striped table-sm row-border hover" datatable [dtOptions]="dtOptions">
+              <table class="table table-bordered table-striped table-sm row-border hover datatable" datatable>
                 <thead>
                   <tr>
                     <th scope="col">S.NO</th>
@@ -84,41 +74,14 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>12:15:AM</td>
-                    <td>01/01/2019</td>
-                    <td>Created</td>
-                    <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
+                  <tr *ngFor="let item of singleOdata.orderLog">
+                    <td>1</td>
+                    <td>{{item.time}}</td>
+                    <td>{{item.date}}</td>
+                    <td>{{item.status}}</td>
+                    <td>{{item.description}}</td>
                   </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>11:15:AM</td>
-                    <td>15/05/2018</td>
-                    <td>Deleted</td>
-                    <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>04:15:AM</td>
-                    <td>018/08/2018</td>
-                    <td>Update</td>
-                    <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>02:15:AM</td>
-                    <td>01/05/2019</td>
-                    <td>update</td>
-                    <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>03:15:AM</td>
-                    <td>09/02/2019</td>
-                    <td>Delivered</td>
-                    <td>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</td>
-                  </tr>
+                
                 </tbody>
               </table>
             </div>

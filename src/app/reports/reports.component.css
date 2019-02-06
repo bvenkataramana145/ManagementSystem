@@ -11,3 +11,8 @@ section.multi-order {
     position: relative;
     top:5em;
 }
+section.graphs {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+

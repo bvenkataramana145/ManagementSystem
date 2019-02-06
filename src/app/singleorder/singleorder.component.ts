@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SingleodserviceService } from '../singleodservice.service';
 
 @Component({
   selector: 'app-singleorder',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleorderComponent implements OnInit {
 
-  constructor() { }
+  singleOdata: any;
 
-  ngOnInit() {
+  constructor(private getSingleodserviceService: SingleodserviceService) { }
+
+  ngOnInit() { }
+
+  getdetails() {
+    // this.getSingleodserviceService.getdetailsval().subscribe( res =>alert(JSON.stringify(res)));
+
+    this.getSingleodserviceService.getdetailsval().subscribe
+      (data => {
+      this.singleOdata = data;
+        console.log(" data" + this.singleOdata);
+      }, error => {
+        console.log(error.message);
+      }
+      );
+    // this.singleOdata
+    // this.singleOdata = JSON.stringify(this.singleOdata)
+    // alert(this.singleOdata);
   }
 
 }
