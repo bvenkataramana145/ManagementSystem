@@ -17,10 +17,11 @@ export class SingleorderComponent implements OnInit {
 
   getdetails() {
     // this.getSingleodserviceService.getdetailsval().subscribe( res =>alert(JSON.stringify(res)));
-    this.singleOdatashow=true;
+  
     this.getSingleodserviceService.getdetailsval().subscribe
       (data => {
       this.singleOdata = data;
+      this.singleOdatashow=true;
         console.log(" data" + this.singleOdata);
       }, error => {
         console.log(error.message);
